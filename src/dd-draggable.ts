@@ -1,5 +1,5 @@
 /**
- * dd-draggable.ts 12.0.0-dev
+ * dd-draggable.ts 12.1.2-dev
  * Copyright (c) 2021-2024  Alain Dumesny - see GridStack root license
  */
 
@@ -315,7 +315,7 @@ export class DDDraggable extends DDBaseImplement implements HTMLElementExtendOpt
     // TODO: set all at once with style.cssText += ... ? https://stackoverflow.com/questions/3968593
     const style = this.helper.style;
     style.pointerEvents = 'none'; // needed for over items to get enter/leave
-    // style.cursor = 'move'; //  TODO: can't set with pointerEvents=none ! (done in CSS as well)
+    // style.cursor = 'move'; //  TODO: can't set with pointerEvents=none ! (no longer in CSS either as no-op)
     style.width = this.dragOffset.width + 'px';
     style.height = this.dragOffset.height + 'px';
     style.willChange = 'left, top';

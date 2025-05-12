@@ -1,5 +1,5 @@
 /**
- * gridstack SASS styles 12.0.0-dev
+ * gridstack SASS styles 12.1.2-dev
  * Copyright (c) 2021-2024 Alain Dumesny - see GridStack root license
  */
 
@@ -118,7 +118,6 @@ $animation_speed: .3s !default;
 
   &.ui-draggable-dragging {
     will-change: left, top;
-    cursor: move;
   }
 
   &.ui-resizable-resizing {
